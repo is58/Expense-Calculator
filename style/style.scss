@@ -1,0 +1,153 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto+Flex:wght@300;400&family=Sansita&display=swap');
+
+//Varsayılan ayarları değiştirme
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sansita', sans-serif;
+}
+
+//Hesaplayıcı ekranının ana ekranda yerleşim düzeni
+body{
+ background-color: rgba(254, 254, 255, 0.993);
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ align-items: center;
+ 
+}
+
+//Hesaplayıcı ana konteyner ayarları
+
+.container{
+    border: none;
+    background-color: rgba(238, 221, 221, 0.747);
+    max-width: 80vw;
+    min-width: 30vw;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+    //Hoşgeldin başlığı ve isim satırı
+    h1{
+        display: inline-flex;
+
+        input{
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+            outline:none;
+            background-color: transparent;
+            
+        }
+    }
+    //Harcama değişkenleri ve fiyatlarının bulunduğu alan
+    .double{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;  
+     .field{
+        display:flex ;
+        flex-direction: column;
+        gap: 5px;
+     }  
+        label{
+            font-size: 20px;
+
+        }
+        input{
+            padding: 8px 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: small;
+            
+        
+            }
+            
+        }
+}
+
+//Ödendi ve ekleme Butonu
+
+#sec-double{
+    justify-content: space-around;
+    align-items: center;
+    
+    button{
+        padding: 5px 15px;
+        border-radius: 5px;
+        background-color: rgb(13, 204, 13);
+        border: none;
+        cursor: pointer;
+        font-size: medium;       
+    }
+}
+
+// Her ürün ve fiyat girişi sonrası alt kısımda oluşacak alan
+.liste{
+display: flex;
+flex-direction: column;
+gap: 5px;
+overflow: auto;
+padding: 3px;
+width: 100%;;
+
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        padding: 2px 10px;
+        border-radius: 10px;
+        width: 100%;;
+       
+        img{
+            width: 50px;
+            background-image: none;
+
+        }
+        h2{
+            color: red;
+        }
+    }
+}
+
+// Toplam harcamanın gösterildiği alan
+#toplamrow{
+   margin-top: 5px; 
+   border: none;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    #toplam{
+        color: rgb(20, 248, 248);
+        font-weight: bolder;
+    }
+}
+
+.ödendi{
+
+    h1{
+        text-decoration-line:line-through;
+        color: gray;
+    }
+    h2{
+        color: green !important;
+    }
+
+}
+
+

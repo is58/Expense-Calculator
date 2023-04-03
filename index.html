@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!--Ana Ekran-->
+    <div class="container">
+
+    <h1>Welcome.. <input type="text" placeholder="enter your name.." autofocus></h1>
+
+
+    <form onsubmit="harcamaEkle(event)">
+
+<!--Fiyat ve Harcama -->
+        <div class="double">
+            <div class="field">
+                <label class="label">Consumption</label>
+                <input type="text" autocomplete="off" class="input" id="harcama" >
+            </div>
+            <div class="field">
+                <label class="label">Price</label>
+                <input type="number" class="input" id="fiyat">
+            </div>
+    
+            <!--Ödendi ve Ekle -->
+
+        </div>
+         <div class="double" id="sec-double">
+            <div>
+         <input type="checkbox" id="ödeme">
+         <label for="ödeme">Paid</label>
+            </div>
+            <div>
+                <button type="submit">Add</button>
+            </div>
+        </div>
+    </form>
+
+<!--Toplam Harcama -->
+
+   <div id="toplamrow">Total <span id="toplam" ></span>&#8378</span></div>
+   
+   <!--Eklenen İtemlerin Listesi-->
+   <div class="liste">
+
+    <!--<div class="item">
+        <h1>
+            Telefon 
+        </h1>
+        <h2>
+            5000 &#8378;
+        </h2>
+
+        <div class="buttons">
+    <img src="image/payment.png" alt="">
+    <img src="image/delete.png" alt="">
+       </div>
+</div>
+-->
+</div>
+</div>
+    
+</body>
+</html>
